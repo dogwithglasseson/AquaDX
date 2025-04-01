@@ -24,7 +24,7 @@ services:
       MYSQL_USER: cat
       MYSQL_PASSWORD: meow
     ports:
-      - "${AQUADX_DB_PORT:-127.0.0.1:3369}:3306"
+      - "3369:3306"
     volumes:
       - "${AQUADX_DB_DATA:-mariadb_data}:/var/lib/mysql"
 
